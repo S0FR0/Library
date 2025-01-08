@@ -8,6 +8,25 @@
 </head>
 <body>
     <button class="add">Add book</button>
+    <dialog>
+        <form>
+            <label for="title">Title:</label>
+            <input type="text" name="title" id="title" required>
+
+            <label for="author">Author:</label>
+            <input type="text" name="author" id="author" required>
+
+            <label for="nrPages">Number of pages:</label>
+            <input type="number" name="nrPages" id="nrPages" required>
+
+            <select name="status" id="status" size="1">
+                <option value="read">read</option>
+                <option value="not-read">not read</option>
+            </select>
+
+            <button id="submit">Submit</button>
+        </form>
+    </dialog>
     <div class="container"></div>
     <script src="./script.js"></script>
 </body>
